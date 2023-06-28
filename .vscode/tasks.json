@@ -14,7 +14,7 @@
             // Release编译 
             "type": "shell",
             "label": "release",
-            "command": "cd build; cmake -D CMAKE_BUILD_TYPE=RELEASE .. ; make;",
+            "command": "cd build; cmake -D CMAKE_BUILD_TYPE=RELEASE .. ;cmake --build . --config Release ;",
             "group": {
                 "kind": "build",
                 "isDefault": true
