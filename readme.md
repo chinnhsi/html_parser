@@ -61,25 +61,25 @@ vector<DOMElement *> HTMLParser::documentSelectorAll(const char *query)
 // 查询元素
 // query：CSS选择器语句
 // 返回值：匹配到的第一个元素，若没有返回nullptr
-DOMElement *HTMLParser::documentSelector(const char *query)
+DOMElement *DOMElement::documentSelector(const char *query)
 
 // 查询全部元素
 // query：CSS选择器语句
 // 返回值：匹配到的全部元素，若没有返回一个size=0的vector
-vector<DOMElement *> HTMLParser::documentSelectorAll(const char *query)
+vector<DOMElement *> DOMElement::documentSelectorAll(const char *query)
 
 // 获取当前标签内文本
 // 返回值：标签内文本
-const char *getInnerHTML()
+const char *DOMElement::getInnerHTML()
 
 // 获取标签属性
 // key：属性名称
 // 返回值：若有此属性，返回属性值，否则返回nullptr
-const char *getAttribute(const char *key)
+const char *DOMElement::getAttribute(const char *key)
 
 // 获取标签名称
 // 返回值：标签名称
-const char *getTagName()
+const char *DOMElement::getTagName()
 ```
 
 # 原理
