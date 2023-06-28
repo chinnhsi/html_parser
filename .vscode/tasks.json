@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            // Debug编译
+            "type": "shell",
+            "label": "debug",
+            "command": "cd build; cmake -D CMAKE_BUILD_TYPE=DEBUG .. ;cmake --build . --config Debug ;",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            // Release编译 
+            "type": "shell",
+            "label": "release",
+            "command": "cd build; cmake -D CMAKE_BUILD_TYPE=RELEASE .. ; make;",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}
